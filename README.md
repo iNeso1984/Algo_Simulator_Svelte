@@ -1,7 +1,7 @@
 # **Big O Visualizer** 🌐
 
 ## **What is Big O Notation?** 🤔
-This is a app I created to understand algorithims as I work through my graduate courses. This is a simplified version of a bigger topic, but had fun creating it.
+This is a app I created to understand algorithims for fun. This is a simplified version of a bigger topic.
 
 ## Quick Summary:
 
