@@ -35,5 +35,6 @@ Understanding these complexities helps developers write efficient code and make 
 ```bash
 git clone <repository-url>
 cd <project-folder>
-npm run dev 
+npm install
+npm run dev  
 
