@@ -1,47 +1,39 @@
-# Svelte + Vite
+# **Big O Visualizer** 🌐
 
-This template should help get you started developing with Svelte in Vite.
+## **What is Big O Notation?** 🤔
+This is a app I created to understand algorithims as I work through my graduate courses. This is a simplified version of a bigger topic, but had fun creating it.
 
-## Recommended IDE Setup
+## Quick Summary:
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+Big O Notation is a mathematical representation of an algorithm's efficiency. It describes how the runtime or space requirements of an algorithm grow relative to the input size. The most common complexities include:
 
-## Need an official Svelte framework?
+- **O(1):** Constant time — performance remains the same regardless of input size.
+- **O(log n):** Logarithmic time — performance grows slowly as input size increases.
+- **O(n):** Linear time — performance grows directly proportional to input size.
+- **O(n log n):** Linearithmic time — often seen in efficient sorting algorithms like mergesort.
+- **O(n²):** Quadratic time — performance grows rapidly; common in nested loops.
+- **O(2ⁿ):** Exponential time — extremely inefficient for large inputs; common in brute-force solutions.
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+Understanding these complexities helps developers write efficient code and make informed decisions about algorithm selection.
 
-## Technical considerations
+---
 
-**Why use this over SvelteKit?**
+### **Tech Stack**
+- **Frontend Framework:** [Svelte](https://svelte.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Charting Library:** [Chart.js](https://www.chartjs.org/)
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+### **Key Files**
+- `App.svelte`: The main component handling user interactions and graph rendering.
+- `calculateBigO.js`: Implements the logic for calculating Big O values for the selected algorithm and input size.
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+---
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+## **Getting Started** 🏁
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+### **1. Clone the Repository**
+```bash
+git clone <repository-url>
+cd <project-folder>
+npm run dev to start app
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `checkJs` in the JS template?**
-
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
