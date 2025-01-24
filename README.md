@@ -1,6 +1,8 @@
 # **Big O Visualizer** 🌐
 https://algo-simulator-svelte-qcws.vercel.app/
 
+An amazing cheat sheet if you want to understand Big O: https://www.bigocheatsheet.com/
+
 ## **What is Big O Notation?** 🤔
 This is a app I created to understand algorithims for fun. This is a simplified version of a bigger topic.
 
